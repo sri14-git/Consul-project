@@ -22,6 +22,9 @@ terraform destroy
 # show resources and components from current state
 terraform state list
 ```
+#### to install and configure consul using helm
+```sh
+# helm install aws hashicorp/consul --version 1.0.0 --value consul-values.yaml --set gobal.datacenter=aws
 
 #### Get access to EKS cluster
 ```sh
