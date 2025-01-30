@@ -25,6 +25,8 @@ terraform state list
 #### to install and configure consul using helm
 ```sh
 # helm install aws hashicorp/consul --version 1.0.0 --value consul-values.yaml --set gobal.datacenter=aws
+vice versa for lks
+```
 
 #### Get access to EKS cluster
 ```sh
