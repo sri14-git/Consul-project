@@ -1,7 +1,5 @@
 provider "aws" {
     region     = var.aws_region
-    access_key = var.aws_access_key_id
-    secret_key = var.aws_secret_access_key
 }
 
 module "myapp-vpc" {
@@ -69,7 +67,7 @@ module "eks" {
 
       instance_types = ["t2.small"]
 
-      # add permission for ebs storage creation for Consul
+      # add permission for ebs storage creation for Consul to  store its stateful data
       iam_role_additional_policies = {
         AmazonEBSCSIDriverPolicy = "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
       } 
