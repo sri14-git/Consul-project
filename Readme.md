@@ -1,4 +1,4 @@
-Highly Available Microservices Architecture with Consul Service Mesh on AWS EKS and Linode LKE
+##Highly Available Microservices Architecture with Consul Service Mesh on AWS EKS and Linode LKE
 Creating a service mesh using HashiCorp's Consul to manage communication within a cluster of microservices (open-source microservice application from Google) and deploying it in AWS EKS using Terraform using GitHub Actions to automate this process and also connecting a replica of this application in LKE using a mesh gateways to ensure high availability, ensure zero downtime in case of service failure and load balancing.
 
 
